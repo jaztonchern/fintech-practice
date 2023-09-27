@@ -1,13 +1,26 @@
 const express = require("express");
-
-const user = require("./api/user");
+const user = require("./apis/user");
+const accounts = require("./apis/accounts");
+const transaction = require("./apis/transaction");
 
 const service = express();
 
 service.use(express.json());
 
-// Mount the router under a specific path
+// Mount the APIs under a specific path mapping
 service.use("/user", user.router);
+service.use("/accounts", accounts.router);
+service.use("/transaction", transaction.router);
+
+// Start your Express app
+service.listen(3000, (error) => {
+    if (error) {
+        console.error("Error occurred while starting the service");
+    } else {
+        console.log("Server started on port 3000");
+    }
+});
+
 
 // let router = express.Router();
 
@@ -66,15 +79,6 @@ service.use("/user", user.router);
 // });
 
 // service.use(router);
-
-// Start your Express app
-service.listen(3000, (error) => {
-    if (error) {
-        console.error("Error occurred while starting the service");
-    } else {
-        console.log("Server started on port 3000");
-    }
-});
 
 // File 1 - Mock Data Layer
 // File 2 - Logic for all the APIs
