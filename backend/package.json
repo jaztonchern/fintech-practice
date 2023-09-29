@@ -1,7 +1,4 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   "name": "backend",
   "version": "1.0.0",
   "description": "my first node for NUS course",
@@ -11,9 +8,6 @@
   },
   "author": "",
   "license": "ISC",
->>>>>>> 6a8d92b (moved files to backend folder)
-=======
->>>>>>> 7f73ce6 (added authdemo)
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
