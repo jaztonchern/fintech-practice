@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   "name": "backend",
   "version": "1.0.0",
@@ -11,12 +12,13 @@
   "author": "",
   "license": "ISC",
 >>>>>>> 6a8d92b (moved files to backend folder)
+=======
+>>>>>>> 7f73ce6 (added authdemo)
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "express-openid-connect": "^2.16.0",
+    "express-openid-connect": "^2.17.0",
     "mysql": "^2.18.1"
-  },
-  "devDependencies": {}
+  }
 }
