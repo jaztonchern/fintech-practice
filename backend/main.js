@@ -1,7 +1,7 @@
 const express = require("express");
 const user = require("./apis/user");
 const accounts = require("./apis/accounts");
-const transactions = require("./apis/transactions");
+const transaction = require("./apis/transaction");
 
 const service = express();
 
@@ -10,7 +10,7 @@ service.use(express.json());
 // Mount the APIs under a specific path mapping
 service.use("/user", user.router);
 service.use("/accounts", accounts.router);
-service.use("/transactions", transactions.router);
+service.use("/transaction", transaction.router);
 
 // Start your Express app
 service.listen(3000, (error) => {
